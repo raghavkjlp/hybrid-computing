@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — Hybrid FDP on Quantum Computing</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ===================== Program Logos ===================== */
+.program-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.program-logo {
+  text-align: center;
+}
+
+.program-row img {
+  height: 70px;
+  width: auto;
+  transition: transform 0.3s;
+}
+
+.program-row img:hover {
+  transform: scale(1.1);
+}
+
+.program-tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b52e2e; /* same red tone as Thapar logo */
+  font-style: italic;
+}
+
+/* ===================== Header Section ===================== */
+.about-header {
+  text-align: center;
+  background: linear-gradient(135deg, #f3f4f8, #e8ecf5);
+  padding: 40px 20px 40px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.about-header h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1b2850;
+}
+
+.about-header h2 {
+  font-size: 1.2rem;
+  color: #1f3b80;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* ===================== Content Cards ===================== */
+.section-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 40px 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.section-card h2 {
+  color: #2a3a70;
+  border-left: 5px solid #b58d58;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.section-card ul {
+  margin-left: 25px;
+}
+
+.section-card li {
+  margin-bottom: 8px;
+}
+
+/* ===================== Blink Animation ===================== */
+.blink-red {
+  color: red;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="img/tiet.jpg" alt="Thapar Logo" class="nav-logo">
+      <div class="site-title">Hybrid FDP Quantum Computing</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Programme</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="cordinator.html">Coordinators</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+<main style="padding-top:60px;">
+
+  <!-- Top Banner Section -->
+  <section class="about-header">
+    <h1>Hybrid Faculty Development Programme on <span style="color:#b52e2e;">Quantum Computing</span></h1>
+    <h2>(17–22 November 2025)</h2>
+    <p style="margin-top:10px;font-weight:600;color:#2b2b2b;">
+      Jointly organised by Thapar Institute of Engineering & Technology, Patiala, and IIITDM Jabalpur<br>
+      under the Ministry of Electronics and Information Technology (MeitY), Government of India.
+    </p>
+
+    <div class="program-row">
+      <div class="program-logo">
+        <img src="img/tiet.jpg" alt="Thapar Institute Logo">
+        <p class="program-tagline">Seeking Excellence Together</p>
+      </div>
+      <div class="program-logo">
+        <img src="img/iitdm.jpg" alt="IIITDM Jabalpur Logo">
+        <p class="program-tagline">Electronics and ICT Academy</p>
+      </div>
+      <div class="program-logo">
+        <img src="img/digital.jpg" alt="Digital India Logo">
+        <p class="program-tagline">An Initiative of the Ministry</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programme Overview -->
+  <section class="section-card">
+    <h2>Programme Overview</h2>
+    <p>
+      The goal of this FDP is to bring together renowned experts conducting pioneering research in the field
+      of <strong>Quantum Computing</strong> to disseminate knowledge among faculty members, research scholars,
+      and postgraduate students who wish to explore this emerging technological frontier.
+    </p>
+    <p>
+      The professionals will share their expertise and experience to inspire participants to pursue research
+      and innovation in Quantum Computing and its applications.
+    </p>
+    <p><strong>Who can attend:</strong> Faculty members from colleges, universities, and professional institutes,
+      as well as students, researchers, and industry personnel working in related disciplines.</p>
+      <p>
+  Other eminent personnel from IITs, IIITs, NITs, and industry experts shall deliver
+  lectures and <strong>hands-on sessions</strong> as part of the FDP.
+</p>
+
+    <h3 style="margin-top:25px;color:#663399;">Important Dates</h3>
+    <ul>
+      <li><strong class="blink-red">Last Date for Registration: 12th November 2025</strong></li>
+      <li><strong>FDP Dates:</strong> 17th – 22nd November 2025</li>
+      <li><strong>Timings:</strong> 09:00 AM to 01:00 PM & 02:00 PM to 06:00 PM</li>
+    </ul>
+  </section>
+  <!-- Hands-On Sessions -->
+  <section class="section-card">
+    <h2>Hands-On Sessions</h2>
+    <ul>
+      <li>Introduction to QML and hybrid quantum–classical models using quantum classifiers such as Qiskit or PennyLane.</li>
+      <li>Building qubits with trapped ions and exploring Linear Optics-based Quantum Computation using Strawberry Fields (Xanadu) or a similar simulators.</li>
+      <li>Studying bit-flip and phase-flip errors using a 3-qubit repetition code in Qiskit.</li>
+      <li>Implementing Quantum Key Distribution (QKD) through the BB84 protocol through simulation tools such as Qiskit or QuNetSim.</li>
+      <li>Simulating noisy channels to demonstrate how quantum error correction improves fidelity.</li>
+    </ul>
+  </section>
+
+  <!-- Programme Features -->
+  <section class="section-card">
+    <h2>Programme Features</h2>
+    <ul>
+      <li>Comprehensive hands-on sessions.</li>
+      <li>Multidisciplinary coverage of Quantum Technologies.</li>
+      <li>Practical coding and simulation exercises.</li>
+      <li>Expert-led lectures and live demonstrations.</li>
+      <li>Discussions on research and career opportunities.</li>
+      <li>Networking and collaboration platform.</li>
+      <li>Certification and skill recognition.</li>
+    </ul>
+    <p><strong>Theory and Lab:</strong> 40 Hours</p>
+  </section>
+
+  <!-- Key Takeaways -->
+  <section class="section-card" style="background:#f9f9fc;">
+    <h2>Key Takeaways</h2>
+    <ul>
+      <li>Hands-on exposure to Quantum Computing tools and frameworks.</li>
+      <li>Guidance from leading experts and researchers in the field.</li>
+      <li>Opportunities for collaboration, networking, and research initiatives.</li>
+      <li>Certification jointly issued by Thapar Institute and IIITDM Jabalpur.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container"><small>© 2025 Thapar Institute of Engineering & Technology & IIITDM Jabalpur</small></div>
+</footer>
+
+</body>
+</html>

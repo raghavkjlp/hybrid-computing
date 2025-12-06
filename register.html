@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register — Hybrid FDP</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.register-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 40px 30px;
+  margin: 30px auto;
+  max-width: 900px;
+  line-height: 1.7;
+  color: #333;
+}
+.register-card h2, .register-card h3 {
+  color: #2a3a70;
+  margin-bottom: 10px;
+}
+.register-card a {
+  color: #1a4fd0;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-card a:hover {
+  text-decoration: underline;
+}
+.register-card table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+.register-card td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.blink-red {
+  color: red;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.fee-box {
+  background: #f6f8ff;
+  border-left: 5px solid #2a3a70;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+
+.qr-img {
+  max-width: 320px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+</style>
+</head>
+
+<body>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="img/tiet.jpg" alt="Thapar Logo" class="nav-logo">
+      <div class="site-title">Hybrid FDP Quantum Computing</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Programmes</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="cordinator.html">Coordinators</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+<main style="padding-top:110px">
+
+  <!-- Registration Section -->
+  <div class="register-card">
+    <h2>Registration Details</h2>
+    <!-- <p>Please complete your registration using the following link:</p>
+    <p><a href="https://tinyurl.com/3fszw5zp" target="_blank">👉 Click here to Register</a></p> -->
+
+    <div class="fee-box">
+      <h3>Registration Fee</h3>
+      <ul>
+        <li><strong>₹1000</strong> – for <strong>Offline Participation</strong></li>
+        <li><strong>₹500</strong> – for <strong>Online Participation</strong></li>
+      </ul>
+      <p><strong class="blink-red">Registration Closed</strong></p>
+    </div>
+
+    <h3>Mode of Payment</h3>
+    <h4 style="color:#5a2d91;">Internet Banking / UPI</h4>
+    <table>
+      <tr>
+        <td><strong>Beneficiary Name</strong></td>
+        <td>Thapar Institute of Engineering & Technology</td>
+      </tr>
+      <tr>
+        <td><strong>Bank Name</strong></td>
+        <td>IDBI Bank</td>
+      </tr>
+      <tr>
+        <td><strong>Account Number</strong></td>
+        <td>0267104000092579</td>
+      </tr>
+      <tr>
+        <td><strong>IFSC Code</strong></td>
+        <td>IBKL0000267</td>
+      </tr>
+    </table>
+
+    <h4 style="margin-top:25px;color:#5a2d91;">UPI Payment (Scan & Pay)</h4>
+    <img src="img/payment.png" alt="QR Payment" class="qr-img">
+    <p style="text-align:center;"><strong>VPA:</strong> o5bfrz37gff9@idbi</p>
+  </div>
+
+  <!-- Accommodation Section -->
+  <div class="register-card">
+    <h2>Accommodation Details</h2>
+    <p>Participants attending the FDP <strong>offline</strong> at TIET, Patiala can apply for accommodation using the following link:</p>
+    <p><a href="https://forms.gle/xxqPz37dcBveMnX67" target="_blank">🏨 Click here for Accommodation Request Form</a></p>
+
+    <div class="fee-box">
+      <h3>Accommodation Fee</h3>
+      <ul>
+        <li><strong>₹1000 per day</strong> – Single sharing basis</li>
+        <li><strong>₹500 per day</strong> – Twin sharing basis</li>
+        <li>Accommodation is available in the TIET Guest House / Hostels.</li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container"><small>© 2025 Thapar Institute of Engineering & Technology & IIITDM Jabalpur</small></div>
+</footer>
+
+</body>
+</html>

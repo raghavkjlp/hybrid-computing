@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Coordinators | Hybrid FDP Quantum Computing</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+  background: #f6f8fc;
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero section */
+.coordinator-hero {
+  padding-top: 190px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.coordinator-hero h1 {
+  color: #1e3a8a;
+  font-size: 32px;
+  margin: 0;
+  font-weight: 700;
+}
+.coordinator-hero p {
+  color: #374151;
+  max-width: 800px;
+  margin: 10px auto 0;
+  font-size: 16px;
+}
+
+/* Section headings */
+.section-title {
+  text-align: center;
+  color: #1e3a8a;
+  margin: 50px 0 20px;
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #1e3a8a;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Grid styling */
+.coordinator-grid {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.card-coord {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(10, 20, 30, 0.08);
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-coord:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.card-coord img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 12px;
+}
+.card-coord h3 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+  color: #3b2f22;
+}
+.card-coord p.role {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+.card-coord a.email {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1b5fd6;
+  text-decoration: none;
+  font-weight: 600;
+}
+.card-coord a.email:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .card-coord {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+</style>
+</head>
+
+<body>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="img/tiet.jpg" alt="Thapar Logo" class="nav-logo">
+      <div class="site-title">Hybrid FDP Quantum Computing</div>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <nav id="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Programmes</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="cordinator.html">Coordinators</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+<main>
+  <section class="coordinator-hero">
+    <h1>Coordinators</h1>
+    <p>The following faculty members are coordinating the Hybrid FDP on Quantum Computing.</p>
+  </section>
+
+  <!-- Coordinators -->
+  <h2 class="section-title">Coordinators</h2>
+  <section class="coordinator-grid">
+    <div class="card-coord">
+      <img src="img/neenuu.jpeg" alt="Dr. Neenu Garg">
+      <h3>Dr. Neenu Garg</h3>
+      <p class="role">Coordinator — Thapar Institute of Engineering & Technology</p>
+      <a class="email" href="mailto:neenu.garg@thapar.edu">neenu.garg@thapar.edu</a>
+    </div>
+    <div class="card-coord">
+      <img src="img/shivansh.jpg" alt="Dr. Shivansh Mishra">
+      <h3>Dr. Shivansh Mishra</h3>
+      <p class="role">Coordinator — IIITDM Jabalpur</p>
+      <a class="email" href="mailto:shivansh@iiitdmj.ac.in">shivansh@iiitdmj.ac.in</a>
+    </div>
+  </section>
+
+  <!-- Co-Coordinators -->
+  <h2 class="section-title">Co-Coordinators</h2>
+  <section class="coordinator-grid">
+    <div class="card-coord">
+      <img src="img/samaya.jpg" alt="Dr. Samya Muhuri">
+      <h3>Dr. Samya Muhuri</h3>
+      <p class="role">Co-Coordinator — Thapar Institute of Engineering & Technology</p>
+      <a class="email" href="mailto:samya.muhuri@thapar.edu">samya.muhuri@thapar.edu</a>
+    </div>
+    <div class="card-coord">
+      <img src="img/sumit.jpg" alt="Dr. Sumit Kumar">
+      <h3>Dr. Sumit Kumar</h3>
+      <p class="role">Co-Coordinator — Thapar Institute of Engineering & Technology</p>
+      <a class="email" href="mailto:kumar.sumit@thapar.edu">kumar.sumit@thapar.edu</a>
+    </div>
+  </section>
+
+  <!-- Organising Secretary -->
+  <h2 class="section-title">Organising Secretary</h2>
+  <section class="coordinator-grid">
+    <div class="card-coord">
+      <img src="img/sandeep.jpg" alt="Dr. Sandeep Verma">
+      <h3>Dr. Sandeep Verma</h3>
+      <p class="role">Organising Secretary — Thapar Institute of Engineering & Technology</p>
+      <a class="email" href="mailto:sandeep.verma@thapar.edu">sandeep.verma@thapar.edu</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+    <div class="container"><small>© 2025 Thapar Institute & IIITDM Jabalpur</small></div>
+  </footer>
+</body>
+</html>

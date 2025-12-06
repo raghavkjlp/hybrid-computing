@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prof. Speaker 1 — Details</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="img/tiet.jpg" alt="Thapar Logo" class="nav-logo">
+      <div class="site-title">Hybrid FDP Quantum Computing</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Programmes</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+   <a href="cordinator.html">Coordinators</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<style>
+  body {
+  background: linear-gradient(135deg, #f4f7fb 0%, #e8f0ff 100%);
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+.speaker-section {
+  padding: 120px 20px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.speaker-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 40px;
+  max-width: 1000px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.speaker-photo img {
+  width: 320px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.speaker-details {
+  flex: 1;
+  min-width: 260px;
+}
+
+.speaker-details h2 {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.speaker-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+footer {
+  background: #857154;
+  color: white;
+  text-align: center;
+  padding: 16px 8px;
+  margin-top: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .speaker-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .speaker-photo img {
+    width: 220px;
+    height: 260px;
+  }
+}
+
+</style>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+<main class="speaker-section">
+  <div class="speaker-card">
+    <div class="speaker-photo">
+      <img src="img/anirban.jpg" alt="Prof. Bimalendu Deb">
+    </div>
+    <div class="speaker-details">
+      <h2>Prof.Anirban Pathak</h2>
+      <p><strong>Affiliation:</strong>Jaypee Institude of Information Technology</p>
+      <p><strong>Abstract:</strong>  Prof. Anirban Pathak (FNASc) is a distinguished theoretical physicist and the Professor & Head of Department at Jaypee Institute of Information Technology (JIIT), Noida. He earned his Ph.D. from Visva-Bharati University, Santiniketan, and completed post-doctoral research at Freie University, Berlin. His research focuses on quantum optics, quantum information, and quantum cryptography, and he has guided several Ph.D. and post-doctoral scholars. Prof. Pathak is a Fellow of the National Academy of Sciences, India (NASI) and serves as an editor for leading journals like Quantum Information Processing and Quantum Review Letters. A recipient of the Shri O. P. Bhasin Award (2017), he continues to contribute significantly to the advancement of quantum science and technology in India and abroad.</p>
+    </div>
+  </div>
+</main>
+
+<footer><div class="container"><small>© 2025 Thapar Institute & IIITDM Jabalpur</small></div></footer>
+</body></html>

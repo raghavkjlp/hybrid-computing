@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Schedule — Hybrid FDP</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Main Section --- */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px 20px 40px;
+  animation: fadeIn 1.2s ease;
+}
+
+.schedule-section {
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+  background: #ffffffb3;
+  backdrop-filter: blur(6px);
+  padding: 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Title with gradient underline */
+.schedule-section h1 {
+  font-size: 2.2rem;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+.schedule-section h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #1e3a8a, #4f46e5);
+  border-radius: 2px;
+}
+
+/* Venue text */
+.venue {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #334155;
+  background: #e0e7ff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+/* Schedule PDF container */
+.schedule-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.schedule-pdf {
+  width: 100%;
+  height: 700px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Responsive (mobile) --- */
+@media (max-width: 768px) {
+  main {
+    padding: 40px 15px 30px;
+  }
+
+  .schedule-section {
+    padding: 30px 15px;
+  }
+
+  .schedule-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .schedule-pdf {
+    height: 500px;
+  }
+}
+
+/* --- Footer --- */
+footer {
+  background: #85704e;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="img/tiet.jpg" alt="Thapar Logo" class="nav-logo">
+      <div class="site-title">Hybrid FDP Quantum Computing</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Programmes</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="cordinator.html">Coordinators</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+<main>
+  <section class="schedule-section">
+    <h1>Programme Schedule</h1>
+    <div class="venue">Venue: LT 201, Computer Science Department, TIET, Patiala</div>
+   <div class="schedule-wrapper">
+  <iframe src="img/QC%20Workshop%20Sessions%20Details.pdf" class="schedule-pdf"></iframe>
+</div>
+
+  </section>
+</main>
+
+<footer>
+  <small>© 2025 Thapar Institute & IIITDM Jabalpur</small>
+</footer>
+</body>
+</html>

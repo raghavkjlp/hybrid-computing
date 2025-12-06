@@ -1,0 +1,128 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prof. Speaker 1 — Details</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="img/tiet.jpg" alt="Thapar Logo" class="nav-logo">
+      <div class="site-title">Hybrid FDP Quantum Computing</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Programmes</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+   <a href="cordinator.html">Coordinators</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<style>
+  body {
+  background: linear-gradient(135deg, #f4f7fb 0%, #e8f0ff 100%);
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+.speaker-section {
+  padding: 120px 20px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.speaker-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 40px;
+  max-width: 1000px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.speaker-photo img {
+  width: 320px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.speaker-details {
+  flex: 1;
+  min-width: 260px;
+}
+
+.speaker-details h2 {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.speaker-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+footer {
+  background: #857154;
+  color: white;
+  text-align: center;
+  padding: 16px 8px;
+  margin-top: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .speaker-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .speaker-photo img {
+    width: 220px;
+    height: 260px;
+  }
+}
+
+</style>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+<main class="speaker-section">
+  <div class="speaker-card">
+    <div class="speaker-photo">
+      <img src="img/neeeeeeeeeeeeeeeeeewone.jpg" alt="Prof. Bimalendu Deb">
+    </div>
+    <div class="speaker-details">
+      <h2>Dr. Shubhani Aggarwal</h2>
+      <p><strong>Affiliation:</strong>University of Petroleum and Energy Studies </p>
+      <p><strong>Abstract:</strong>  Dr. Shubhani Aggarwal, Senior Member, IEEE, is an Assistant Professor-Grade III  with the School of Computer Science, University of Petroleum and Energy Studies (UPES), India. She received her Ph.D. in Computer Science and Engineering from Thapar Institute of Engineering and Technology (Deemed to be University), Patiala, Punjab, India, and completed her postdoctoral research at École de Technologie Supérieure (ÉTS), Montréal, Québec, Canada.
+Her research interests include quantum computing, blockchain, cryptography, the Internet of Drones, and information security. She is the author of the book“The Blockchain Technology for Secure and Smart Applications across Industry Verticals” (Elsevier). She has also published over 50 research papers in reputed journals such as IEEE Transactions on Vehicular Technology, IEEE Transactions on Industrial Informatics, IEEE Transactions on Intelligent Transportation Systems,IEEE Internet of Things Journal, Journal of Network and Computer Applications (Elsevier), IEEE Access, Computers & Security, Mobile Networks and Applications, and Computer Communications, among others.</p>
+    </div>
+  </div>
+</main>
+
+<footer><div class="container"><small>© 2025 Thapar Institute & IIITDM Jabalpur</small></div></footer>
+</body></html>
